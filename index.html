@@ -1,40 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sagar Malakotagi Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Sagar Malakotagi | Probability and Statistics Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            background-color: #e0f7fa;   /* HOME PAGE COLOR (changed) */
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f8ff;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0d4c92;
+            padding: 10px 30px;
+            color: white;
+        }
+
+        .nav-menu a, .dropbtn {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* HERO */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(135deg, #e6f0ff, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding-top: 100px;
         }
-        h1 {
-            color: #003366;
-            font-size: 40px;
+
+        .hero-overlay {
+            background: rgba(255,255,255,0.85);
+            padding: 40px;
+            border-radius: 12px;
         }
-        p {
-            font-size: 20px;
-            color: #333;
+
+        /* SECTIONS */
+        .section {
+            padding: 50px;
+            text-align: center;
         }
-        .box {
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
             background: white;
-            width: 60%;
-            margin: auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
+            padding: 25px;
+            width: 320px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #0d4c92;
+            color: white;
+            text-align: center;
+            padding: 15px;
         }
     </style>
 </head>
+
 <body>
 
-<div class="box">
-    <h1>Sagar Malakotagi</h1>
-    <p><b>USN:</b> 01FE25BCI712</p>
-    <p>BE Student | Portfolio Website</p>
-    <p>Welcome to my personal portfolio</p>
-</div>
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1>Sagar Malakotagi – P&S Portfolio</h1>
+    <nav class="nav-menu">
+        <a href="#">Home</a>
 
-</body>
-</html>
+        <div class="dropdown">
+            <button class="dropbtn">Chapters ▾</button>
+            <div class="dropdown-content">
+                <a href="#">Chapter 1 – Description of Data</a>
+                <a href="#">Chapter 2 – Probability</a>
+                <a href="#">Chapter 3 – Random Variables</a>
+                <a href="#">Chapter 4 – Statistical Inference</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Lab ▾</button>
+            <div class="dropdown-content">
+                <a href="#">Lab 1</a>
+                <a href="#">Lab 2</a>
+                <a href="#">Lab 3</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay">
+        <h2>Welcome</h2>
+        <p>Probability and Statistics Course Portfolio</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>About Me</h2>
+    <div class="card-container">
+        <div class="card">
+            <p>
+                My name is <strong>Sagar Malakotagi</strong> and I am a 2nd Year Computer Science student at
+                <strong>KLE Technological University, BVB Campus, Hubli</strong>.
+                <br><br>
+                <strong>USN:</strong> 01FE25BCI712
+                <br><br>
+                I am interested in probability, statistics, and data analysis.
+                This portfolio presents my learning through course chapters and laboratory experiments.
+            </p>
+        </div>
+    </di
